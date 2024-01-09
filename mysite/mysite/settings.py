@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'crispy_forms',
+    "crispy_bootstrap3",
     'myarts',
     'ads',
     'autos',
@@ -85,7 +86,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap3"
+CRISPY_TEMPLATE_PACK = "bootstrap3"
 
 
 # Database
