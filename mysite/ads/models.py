@@ -2,7 +2,7 @@ from django.db import models
 from django.core.validators import MinLengthValidator
 from django.conf import settings
 
-# from taggit.managers import TaggableManager
+from taggit.managers import TaggableManager
 
 # Create your models here.
 
@@ -14,7 +14,7 @@ class Ad(models.Model):
     text = models.TextField()
 
     # https://django-taggit.readthedocs.io/en/latest/api.html#TaggableManager
-#    tags = TaggableManager(blank=True)
+    tags = TaggableManager(blank=True)
 
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     comments = models.ManyToManyField(settings.AUTH_USER_MODEL,

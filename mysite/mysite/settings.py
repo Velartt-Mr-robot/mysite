@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'django_extensions', 
     'crispy_forms',
     "crispy_bootstrap3",
     'myarts',
@@ -54,6 +55,8 @@ INSTALLED_APPS = [
     'hello',
     'home',
     'polls.apps.PollsConfig',
+    'taggit',
+
 ]
 
 MIDDLEWARE = [
@@ -85,6 +88,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
+
+TAGGIT_CASE_INSENSITIVE = True
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap3"
 CRISPY_TEMPLATE_PACK = "bootstrap3"
